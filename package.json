@@ -1,0 +1,29 @@
+{
+  "name": "nextjs-render",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:pages-isr": "cd render-pages && cd isr && next dev",
+    "dev:pages-ssg": "cd render-pages && cd ssg && next dev",
+    "dev:pages-ssr": "cd render-pages && cd ssr && next dev",
+    "dev:app-isr": "cd render-app && cd isr && next dev",
+    "dev:app-ssg": "cd render-app && cd ssg && next dev",
+    "dev:app-ssr": "cd render-app && cd ssr && next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "20.4.1",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "axios": "^1.4.0",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.9",
+    "next": "13.4.9",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.1.6"
+  }
+}
