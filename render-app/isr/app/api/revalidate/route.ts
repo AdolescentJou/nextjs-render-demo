@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { revalidatePath, revalidateTag } from 'next/cache';
 
 
-// 手动更新页面 http://localhost:3000/api/revalidate?path=/pokemon/Charmander&collection=collection
+// 手动更新页面 
+// 例如http://localhost:3000/api/revalidate?path=/pokemon/Charmander&collection=collection
 export async function GET(request: NextRequest) {
   const path = request.nextUrl.searchParams.get('path') || '/pokemon/[name]';
   const collection = request.nextUrl.searchParams.get('collection') || 'collection';
